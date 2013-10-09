@@ -25,3 +25,7 @@ $("form#login").shush(function() {
 	$("#errorMessage[data-reason='invalid']").slideDown(200);
 });
 ```
+
+## Thanks
+
+Thanks to @nathggns for his help with this.
