@@ -6,7 +6,7 @@ Shush is a simple and easy to use plugin for stopping duplicate form submissions
 
 ## Usage
 
-Link shush.jquery.js into your page, and run the ```.shush()``` method on the selector for your form. For example:
+Link shush.js/shush.min.js into your page, and run the ```.shush()``` method on the selector for your form. For example:
 
 ```
 $("form#login").shush();
