@@ -27,7 +27,7 @@
 			// prevent form from submitting
 			e.preventDefault();
 			$($btn).attr("disabled", "disabled");
-			$($btn).addClass('shush-disabled');
+			$($btn).addClass('sush-disabled');
 			$form.unbind('submit').submit();
 		});
 	}
