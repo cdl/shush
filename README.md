@@ -12,20 +12,12 @@ Link shush.jquery.js into your page, and run the ```.shush()``` method on the se
 $("form#login").shush();
 ```
 
-It's that easy. It also optionally takes in two function parameters. The first is ran before the form is disabled and submitted. If it returns ```true```, the form is disabled and submitted. If ```false```, the form is re-enabled and the second anonymous function is ran.
+It's that easy. It also optionally takes in a single paramether (either a string or a jQuery/Zepto object) that is considered your submit button. Otherwise, it'll just use the submit input that's inside the form .sush() is called on.
 
 ```
-$("form#login").shush(function() {
-	// do whatever you want in here, like run a custom validator
-	// return true because it's considered valid
-	return true;
-}, function() {
-	// if the first function returns false, this will be ran
-	// (used to show error messages)
-	$("#errorMessage[data-reason='invalid']").slideDown(200);
-});
+$("form#login").shush("button#submit");
 ```
 
-## Thanks
+## Disclaimer
 
-Thanks to @nathggns for his help with this.
+This plugin is still under heavy development and has yet to be majorly tested. Use it at your own risk.
