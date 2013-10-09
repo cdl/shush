@@ -5,9 +5,7 @@
 		var $btn = btnSelector || "input[type=submit]";
 
 		if (typeof($btn) == 'string') {
-			console.warn("btn is string - "+ $btn);
 			$btn = $form.find($btn)[0];
-			console.warn("btn is " + $btn);
 			if ($btn.length == 0) {
 				if (window.console) {
 					console.error("Couldn't find element with selector " + btnSelector);
@@ -28,7 +26,6 @@
 		$form.submit(function(e) {
 			// prevent form from submitting
 			e.preventDefault();
-			console.warn(typeof($btn));
 			$($btn).attr("disabled", "disabled");
 			$($btn).addClass('sush-disabled');
 			$form.unbind('submit').submit();
