@@ -21,3 +21,9 @@ $("form#login").shush("button#submit");
 ## Disclaimer
 
 This plugin is still under heavy development and has yet to be majorly tested. Use it at your own risk.
+
+### Thanks
+
+Thanks to the following people for their help:
+* [@nathggns](https://github.com/nathggns)
+* [@elidupuis](https://github.com/elidupuis)
