@@ -12,6 +12,7 @@
 					console.error("Couldn't find element with selector " + btnSelector);
 				
 				return false;
+			}
 		} else if ($btn instanceof Object) {
 			$btn = $form.children(btnSelector[0])[0];
 		} else {
