@@ -9,17 +9,18 @@
 			if ($btn.length == 0) {
 				if (window.console) {
 					console.error("Couldn't find element with selector " + btnSelector);
-					return false;
 				}
+				
+				return false;
 			}
 		} else if ($btn instanceof Object) {
 			$btn = $form.children(btnSelector[0])[0];
 		} else {
 			if (window.console) {
 				console.error("Expected parameter type 'string', 'jQuery', or 'Object', got " + typeof(btnSelector));
-				return false;
 			}
 			
+			return false;
 		}
 
 		// passed validation
